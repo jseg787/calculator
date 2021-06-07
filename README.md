@@ -1,2 +1,5 @@
-# top-calculator
-Calculator project from the odin project
+# Calculator
+Calculator project from The Odin Project
+
+## Github Pages
+https://jseg787.github.io/calculator/
