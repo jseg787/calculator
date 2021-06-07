@@ -1,71 +1,79 @@
 * {
     box-sizing: border-box;
     font-size: 20px;
-  }
+}
   
-  html,body {
-    height: 100%;
-  }
-  
-  body {
-    background-color: #CEEFF2;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #calculator {
-    background-color: #F2BF80;
-    position: relative;
-    border-radius: 10px;
-    padding: .75rem;
-  }
-  
-  #screen {
-    background-color: #99DDFF;
-    margin-bottom: 1rem;
-    padding: .3rem;
-    text-align: right;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 30px;
-  }
-  
-  #numpad {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 2px;
-    justify-content: center;
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .num {
-    background-color: #50667F;
-    color: white;
-  }
-  
-  .symbol {
-    background-color: #F24C27;
-  }
-  
-  .button {
-    padding: .75rem 1.5rem;
-    text-align: center;
-    border-radius: 5px;
-    user-select: none;
-  }
-  
-  #zero {
-    grid-column-start: span 2;
-  }
-  
-  .button:hover {
-    filter: brightness(85%);
-    cursor: pointer;
-  }
-  
-  .button:active {
-    filter: brightness(150%);
-  }
-  
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #CEEFF2;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calculator {
+  background-color: #F2BF80;
+  position: relative;
+  border-radius: 10px;
+  padding: .75rem;
+}
+
+#screen {
+  background-color: #99DDFF;
+  margin-bottom: 1rem;
+  padding: .3rem;
+  text-align: right;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+}
+
+#numpad {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2px;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.num {
+  background-color: #50667F;
+  color: white;
+}
+
+.symbol {
+  background-color: #F24C27;
+}
+
+.button {
+  padding: .75rem 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+}
+
+#zero {
+  grid-column-start: span 2;
+}
+
+.button:hover {
+  filter: brightness(85%);
+  cursor: pointer;
+}
+
+.button:active {
+  filter: brightness(150%);
+}
+
+.inactive {
+  opacity: .5;
+}
+
+.inactive:hover {
+  filter: initial;
+  cursor: initial;
+}
